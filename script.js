@@ -84,8 +84,20 @@ document.addEventListener('DOMContentLoaded', () => {
 // 3. TESTIMONIAL SWITCHER (adicione novos depoimentos neste array)
 const testimonials = [
     {
-        quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        author: 'Lorem Ipsum'
+        quote: '"A hora que abre a caixa e o perfume se espalha é sensacional!"',
+        author: 'Hugo Niy'
+    },
+    {
+        quote: '"Minha equipe e minhas clientes amaram seu café. Uma experiência com sabor de sofisticação. Parabéns!!!"',
+        author: 'Ligiane'
+    },
+    {
+        quote: '"Depois de anos experimentando, por fim, o melhor grão! Agora só compramos dele tem quase um ano. Parabéns! Vocês são os melhores!"',
+        author: 'Carolina Thomé'
+    },
+    {
+        quote: '"O melhor café que já tomei! Os drips são na medida certa pra um café individual e são ótimos para presentear!!!"',
+        author: 'Pamela Ishiki'
     }
 ];
 let currentTestimonial = 0;
@@ -96,10 +108,12 @@ function stepTestimonial(dir) {
     if (!textEl || testimonials.length < 2) return;
     currentTestimonial = (currentTestimonial + dir + testimonials.length) % testimonials.length;
     textEl.style.opacity = 0;
+    authorEl.style.opacity = 0;
     setTimeout(() => {
         textEl.textContent = testimonials[currentTestimonial].quote;
         authorEl.textContent = testimonials[currentTestimonial].author;
         textEl.style.opacity = 1;
+        authorEl.style.opacity = 1;
     }, 200);
 }
 
