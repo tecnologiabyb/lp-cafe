@@ -1128,9 +1128,9 @@ img {
 .steps-container { max-width: 900px; }
 .steps-title {
   font-family: 'Inter', sans-serif; font-size: 2.4rem; font-weight: 400; line-height: 1.2;
-  color: #F2C18A; margin-bottom: 56px; letter-spacing: -0.5px;
+  color: #EEB76B; margin-bottom: 56px; letter-spacing: -0.5px;
 }
-.steps-title strong { font-weight: 800; color: #F4A867; }
+.steps-title strong { font-weight: 800; color: #EEB76B; }
 .steps-list { gap: 48px; }
 .step-card {
   background: none; border: none; padding: 0; border-radius: 0;

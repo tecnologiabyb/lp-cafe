@@ -94,10 +94,6 @@ const testimonials = [
     {
         quote: '"Depois de anos experimentando, por fim, o melhor grão! Agora só compramos dele tem quase um ano. Parabéns! Vocês são os melhores!"',
         author: 'Carolina Thomé'
-    },
-    {
-        quote: '"O melhor café que já tomei! Os drips são na medida certa pra um café individual e são ótimos para presentear!!!"',
-        author: 'Pamela Ishiki'
     }
 ];
 let currentTestimonial = 0;
